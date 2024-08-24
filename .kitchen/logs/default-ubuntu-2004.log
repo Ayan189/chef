@@ -1,0 +1,98 @@
+I, [2024-08-24T20:52:29.611742 #75356]  INFO -- default-ubuntu-2004: -----> Creating <default-ubuntu-2004>...
+I, [2024-08-24T20:52:41.762036 #75356]  INFO -- default-ubuntu-2004: The provider 'virtualbox' that was requested to back the machine
+I, [2024-08-24T20:52:41.762356 #75356]  INFO -- default-ubuntu-2004: 'default' is reporting that it isn't usable on this system. The
+I, [2024-08-24T20:52:41.762369 #75356]  INFO -- default-ubuntu-2004: reason is shown below:
+I, [2024-08-24T20:52:41.762377 #75356]  INFO -- default-ubuntu-2004: 
+I, [2024-08-24T20:52:41.762385 #75356]  INFO -- default-ubuntu-2004: Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+I, [2024-08-24T20:52:41.762392 #75356]  INFO -- default-ubuntu-2004: Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+I, [2024-08-24T20:52:41.762400 #75356]  INFO -- default-ubuntu-2004: this to be available on the PATH. If VirtualBox is installed, please find the
+I, [2024-08-24T20:52:41.762407 #75356]  INFO -- default-ubuntu-2004: `VBoxManage` binary and add it to the PATH environmental variable.
+E, [2024-08-24T20:52:41.779419 #75356] ERROR -- default-ubuntu-2004: Create failed on instance <default-ubuntu-2004>.
+E, [2024-08-24T20:52:41.779656 #75356] ERROR -- default-ubuntu-2004: ------Exception-------
+E, [2024-08-24T20:52:41.779671 #75356] ERROR -- default-ubuntu-2004: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2024-08-24T20:52:41.779683 #75356] ERROR -- default-ubuntu-2004: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2024-08-24T20:52:41.779692 #75356] ERROR -- default-ubuntu-2004: ----------------------
+E, [2024-08-24T20:52:41.779698 #75356] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2024-08-24T20:52:41.779712 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:41.779718 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:41.779724 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:41.779730 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:41.779736 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:41.779746 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:41.779752 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:41.779757 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:41.779763 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:41.779785 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:41.779790 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:41.779795 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:41.779799 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:41.779807 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:41.779811 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:41.779815 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:41.779819 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:41.779824 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:41.779828 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:41.779832 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:41.779836 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:41.779891 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:41.779895 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:41.779899 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:41.779904 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:41.779908 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:41.779912 #75356] ERROR -- default-ubuntu-2004: ----End Backtrace-----
+E, [2024-08-24T20:52:41.779916 #75356] ERROR -- default-ubuntu-2004: ---Nested Exception---
+E, [2024-08-24T20:52:41.779920 #75356] ERROR -- default-ubuntu-2004: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2024-08-24T20:52:41.779924 #75356] ERROR -- default-ubuntu-2004: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2024-08-24T20:52:41.779933 #75356] ERROR -- default-ubuntu-2004: ----------------------
+E, [2024-08-24T20:52:41.779937 #75356] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2024-08-24T20:52:41.779944 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:41.779954 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:41.779958 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:41.779962 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:41.779967 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:41.779971 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:41.779975 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:41.779979 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:41.779983 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:41.779987 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:41.779991 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:41.780000 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:41.780004 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:41.780008 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:41.780012 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:41.780017 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:41.780021 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:41.780025 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:41.780030 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:41.780037 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:41.780042 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:41.780046 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:41.780050 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:41.780054 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:41.780058 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:41.780062 #75356] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:41.780066 #75356] ERROR -- default-ubuntu-2004: ----End Backtrace-----

@@ -1,0 +1,98 @@
+I, [2024-08-24T20:52:41.781929 #75356]  INFO -- default-centos-8: -----> Creating <default-centos-8>...
+I, [2024-08-24T20:52:42.570353 #75356]  INFO -- default-centos-8: The provider 'virtualbox' that was requested to back the machine
+I, [2024-08-24T20:52:42.570413 #75356]  INFO -- default-centos-8: 'default' is reporting that it isn't usable on this system. The
+I, [2024-08-24T20:52:42.570424 #75356]  INFO -- default-centos-8: reason is shown below:
+I, [2024-08-24T20:52:42.570477 #75356]  INFO -- default-centos-8: 
+I, [2024-08-24T20:52:42.570486 #75356]  INFO -- default-centos-8: Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+I, [2024-08-24T20:52:42.570494 #75356]  INFO -- default-centos-8: Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+I, [2024-08-24T20:52:42.570500 #75356]  INFO -- default-centos-8: this to be available on the PATH. If VirtualBox is installed, please find the
+I, [2024-08-24T20:52:42.570506 #75356]  INFO -- default-centos-8: `VBoxManage` binary and add it to the PATH environmental variable.
+E, [2024-08-24T20:52:42.587112 #75356] ERROR -- default-centos-8: Create failed on instance <default-centos-8>.
+E, [2024-08-24T20:52:42.587176 #75356] ERROR -- default-centos-8: ------Exception-------
+E, [2024-08-24T20:52:42.587183 #75356] ERROR -- default-centos-8: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2024-08-24T20:52:42.587188 #75356] ERROR -- default-centos-8: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2024-08-24T20:52:42.587194 #75356] ERROR -- default-centos-8: ----------------------
+E, [2024-08-24T20:52:42.587199 #75356] ERROR -- default-centos-8: ------Backtrace-------
+E, [2024-08-24T20:52:42.587203 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:42.587208 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:42.587213 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:42.587217 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:42.587222 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:42.587227 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:42.587231 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:42.587273 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:42.587279 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:42.587296 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:42.587301 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:42.587304 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:42.587308 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:42.587311 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:42.587315 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:42.587319 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:42.587322 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:42.587326 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:42.587330 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:42.587333 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:42.587337 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:42.587340 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:42.587344 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:42.587348 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:42.587351 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:42.587355 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:42.587358 #75356] ERROR -- default-centos-8: ----End Backtrace-----
+E, [2024-08-24T20:52:42.587362 #75356] ERROR -- default-centos-8: ---Nested Exception---
+E, [2024-08-24T20:52:42.587365 #75356] ERROR -- default-centos-8: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2024-08-24T20:52:42.587368 #75356] ERROR -- default-centos-8: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2024-08-24T20:52:42.587376 #75356] ERROR -- default-centos-8: ----------------------
+E, [2024-08-24T20:52:42.587379 #75356] ERROR -- default-centos-8: ------Backtrace-------
+E, [2024-08-24T20:52:42.587383 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:42.587386 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:42.587391 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:42.587395 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:42.587398 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:42.587402 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:42.587406 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:42.587410 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:42.587413 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:42.587418 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:42.587422 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:42.587425 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:42.587429 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:42.587432 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:42.587436 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:42.587439 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:42.587442 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:42.587446 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:42.587450 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:42.587453 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:42.587460 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:42.587463 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:42.587467 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:42.587471 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:42.587474 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:42.587477 #75356] ERROR -- default-centos-8: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:42.587481 #75356] ERROR -- default-centos-8: ----End Backtrace-----

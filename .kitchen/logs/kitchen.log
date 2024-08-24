@@ -1,0 +1,227 @@
+I, [2024-08-24T20:52:22.788313 #75356]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.6.0)
+I, [2024-08-24T20:52:29.611706 #75356]  INFO -- Kitchen: -----> Creating <default-ubuntu-2004>...
+I, [2024-08-24T20:52:41.781891 #75356]  INFO -- Kitchen: -----> Creating <default-centos-8>...
+E, [2024-08-24T20:52:42.588737 #75356] ERROR -- Kitchen: ------Exception-------
+E, [2024-08-24T20:52:42.588750 #75356] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2024-08-24T20:52:42.588756 #75356] ERROR -- Kitchen: Message: 2 actions failed.
+>>>>>>     Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-ubuntu-2004
+>>>>>>     Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-centos-8
+E, [2024-08-24T20:52:42.588764 #75356] ERROR -- Kitchen: ----------------------
+E, [2024-08-24T20:52:42.588769 #75356] ERROR -- Kitchen: ------Backtrace-------
+E, [2024-08-24T20:52:42.588774 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:181:in `report_errors'
+E, [2024-08-24T20:52:42.588779 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:172:in `run_action'
+E, [2024-08-24T20:52:42.588784 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2024-08-24T20:52:42.588789 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:42.588794 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command/action.rb:33:in `call'
+E, [2024-08-24T20:52:42.588799 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2024-08-24T20:52:42.588805 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/cli.rb:198:in `block (2 levels) in <class:CLI>'
+E, [2024-08-24T20:52:42.588810 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor/command.rb:27:in `run'
+E, [2024-08-24T20:52:42.588814 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2024-08-24T20:52:42.588819 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor.rb:392:in `dispatch'
+E, [2024-08-24T20:52:42.588824 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor/base.rb:485:in `start'
+E, [2024-08-24T20:52:42.588835 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/bin/kitchen:11:in `block in <top (required)>'
+E, [2024-08-24T20:52:42.588840 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/errors.rb:183:in `with_friendly_errors'
+E, [2024-08-24T20:52:42.588844 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/bin/kitchen:11:in `<top (required)>'
+E, [2024-08-24T20:52:42.588848 #75356] ERROR -- Kitchen: /usr/local/bin/kitchen:440:in `load'
+E, [2024-08-24T20:52:42.588851 #75356] ERROR -- Kitchen: /usr/local/bin/kitchen:440:in `<main>'
+E, [2024-08-24T20:52:42.588855 #75356] ERROR -- Kitchen: ----End Backtrace-----
+E, [2024-08-24T20:52:42.588859 #75356] ERROR -- Kitchen: -Composite Exception--
+E, [2024-08-24T20:52:42.588863 #75356] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2024-08-24T20:52:42.588867 #75356] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-ubuntu-2004
+E, [2024-08-24T20:52:42.588871 #75356] ERROR -- Kitchen: ----------------------
+E, [2024-08-24T20:52:42.588887 #75356] ERROR -- Kitchen: ------Backtrace-------
+E, [2024-08-24T20:52:42.588892 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:42.588897 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:42.588901 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:42.588905 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:42.588909 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:42.588913 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:42.588917 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:42.588921 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:42.588925 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:42.588929 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:42.588933 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:42.588936 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:42.588944 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:42.588948 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:42.588952 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:42.588956 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:42.588960 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:42.588964 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:42.588968 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:42.588972 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:42.588976 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:42.588980 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:42.588983 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:42.588987 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:42.588994 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:42.588999 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:42.589003 #75356] ERROR -- Kitchen: ----End Backtrace-----
+E, [2024-08-24T20:52:42.589007 #75356] ERROR -- Kitchen: ---Nested Exception---
+E, [2024-08-24T20:52:42.589010 #75356] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2024-08-24T20:52:42.589014 #75356] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1]
+E, [2024-08-24T20:52:42.589018 #75356] ERROR -- Kitchen: ----------------------
+E, [2024-08-24T20:52:42.589022 #75356] ERROR -- Kitchen: ------Backtrace-------
+E, [2024-08-24T20:52:42.589026 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:42.589032 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:42.589036 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:42.589040 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:42.589044 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:42.589048 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:42.589052 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:42.589056 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:42.589060 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:42.589064 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:42.589067 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:42.589072 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:42.589077 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:42.589080 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:42.589084 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:42.589088 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:42.589092 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:42.589096 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:42.589100 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:42.589114 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:42.589118 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:42.589122 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:42.589126 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:42.589130 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:42.589137 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:42.589141 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:42.589145 #75356] ERROR -- Kitchen: ----End Backtrace-----
+E, [2024-08-24T20:52:42.589149 #75356] ERROR -- Kitchen: -Composite Exception--
+E, [2024-08-24T20:52:42.589153 #75356] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2024-08-24T20:52:42.589157 #75356] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-centos-8
+E, [2024-08-24T20:52:42.589161 #75356] ERROR -- Kitchen: ----------------------
+E, [2024-08-24T20:52:42.589165 #75356] ERROR -- Kitchen: ------Backtrace-------
+E, [2024-08-24T20:52:42.589169 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:42.589172 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:42.589176 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:42.589181 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:42.589184 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:42.589188 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:42.589192 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:42.589196 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:42.589200 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:42.589204 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:42.589207 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:42.589211 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:42.589215 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:42.589219 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:42.589225 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:42.589229 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:42.589233 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:42.589237 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:42.589241 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:42.589244 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:42.589248 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:42.589252 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:42.589256 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:42.589260 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:42.589264 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:42.589267 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:42.589271 #75356] ERROR -- Kitchen: ----End Backtrace-----
+E, [2024-08-24T20:52:42.589275 #75356] ERROR -- Kitchen: ---Nested Exception---
+E, [2024-08-24T20:52:42.589278 #75356] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2024-08-24T20:52:42.589282 #75356] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1]
+E, [2024-08-24T20:52:42.589286 #75356] ERROR -- Kitchen: ----------------------
+E, [2024-08-24T20:52:42.589290 #75356] ERROR -- Kitchen: ------Backtrace-------
+E, [2024-08-24T20:52:42.589293 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2024-08-24T20:52:42.589297 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2024-08-24T20:52:42.589301 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2024-08-24T20:52:42.589307 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2024-08-24T20:52:42.589311 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2024-08-24T20:52:42.589315 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2024-08-24T20:52:42.589326 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-08-24T20:52:42.589330 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-08-24T20:52:42.589334 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2024-08-24T20:52:42.589338 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2024-08-24T20:52:42.589342 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2024-08-24T20:52:42.589345 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-08-24T20:52:42.589349 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-08-24T20:52:42.589353 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-08-24T20:52:42.589357 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-08-24T20:52:42.589361 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-08-24T20:52:42.589364 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-08-24T20:52:42.589368 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-08-24T20:52:42.589372 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-08-24T20:52:42.589376 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-08-24T20:52:42.589379 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-08-24T20:52:42.589383 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:128:in `create'
+E, [2024-08-24T20:52:42.589387 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-08-24T20:52:42.589390 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-08-24T20:52:42.589394 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-08-24T20:52:42.589398 #75356] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-08-24T20:52:42.589404 #75356] ERROR -- Kitchen: ----End Backtrace-----
