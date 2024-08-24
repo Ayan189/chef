@@ -21,7 +21,7 @@ docker_network 'private-net' do
 
 
   docker_image 'a4ayan/nginx-haproxy' do
-    tag '2'
+    tag 'latest'
     action :pull
   end
   
