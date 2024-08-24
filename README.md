@@ -72,13 +72,13 @@ end
 
 # Pull and run NGINX-HAProxy container
 docker_image 'a4ayan/nginx-haproxy' do
-    tag '2'
+    tag 'latest'
     action :pull
 end
 
 docker_container 'nginx_haproxy' do
     image 'a4ayan/nginx-haproxy'
-    tag '2'
+    tag 'latest'
     network_mode 'private-net'
     port ['80:80', '9100:9100']
     action :run
