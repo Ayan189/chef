@@ -29,7 +29,7 @@ docker_network 'private-net' do
     image 'a4ayan/nginx-haproxy'
     tag '2'
     network_mode 'private-net'
-    port '8087:80'
+    port '80:80'
     port '9100:9100'
     action :run
   end
